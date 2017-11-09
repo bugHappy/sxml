@@ -1,0 +1,6 @@
+e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\bin\Release\SouiXmlPlugins.vsix
+e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\bin\Release\extension.vsixmanifest
+e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Release\SouiXmlPlugins.csprojResolveAssemblyReference.cache
+e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Release\SouiXmlPlugins.dll
+e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Release\SouiXmlPlugins.pdb
+e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Release\extension.vsixmanifest

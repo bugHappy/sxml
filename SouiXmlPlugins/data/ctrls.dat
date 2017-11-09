@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<root>
+	<ctrls>
+    <SOUI des="SOUI真窗口"/>
+    <root des="SOUI逻辑根窗口"/>
+		<window des="SOUI的逻辑窗口，控件他妈" />
+		<animateimg des="动画" />
+		<anmimg des="动画" />
+		<button des="按钮" />
+		<buttonex des="扩展按钮" />
+		<calendar des="日历" />
+		<caption des="标题" />
+		<check des="复选框" />
+		<combobox des="组合框" />
+		<comboview des="组合框" />
+		<div des="支持滚动条的panel" />
+		<edit des="编辑框" />
+		<flash des="flash插入控件" />
+		<gif des="动画" />
+		<group des="组合框" />
+		<hotkey des="热键" />
+		<hr des="垂直线" />
+		<icon des="图标控件" />
+		<img des="图片控件" />
+		<imgbtn des="图片按钮" />
+		<include des="包含一个布局定义文件" />
+		<link des="URL链接控件" />
+		<listbox des="" />
+		<listctrl des="" />
+		<listview des="" />
+		<mclistview des="" />
+		<mediaplayer des="" />
+		<progress des="" />
+		<richedit des="" />
+		<radio des="" />
+		<realwnd des="" />
+		<RotateWindow des="" />
+		<scrollbar des="" />
+		<scrolltext des="滚动文本" />
+		<scrollview des="" />
+		<sliderbar des="" />
+		<spinButton des="微调按钮" />
+		<splitcol des="" />
+		<splitrow des="" />
+		<tabctrl des="" />
+		<tabctrl2 des="" />
+		<text des="" />
+		<tileview des="" />
+		<toggle des="" />
+		<toolbox des="" />
+		<treectrl des="" />
+		<treeview des="" />
+    <iectrl des="ie控件"/>
+	</ctrls>
+</root>
