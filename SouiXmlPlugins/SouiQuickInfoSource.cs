@@ -32,12 +32,20 @@ namespace SXml
             SnapshotSpan querySpan = new SnapshotSpan(subjectTriggerPoint.Value, 0);
             //look for occurrences of our QuickInfo words in the span
             ITextStructureNavigator navigator = m_provider.NavigatorService.GetTextStructureNavigator(m_subjectBuffer); 
-             TextExtent extent = navigator.GetExtentOfWord(subjectTriggerPoint.Value);
-            SnapshotSpan pre = navigator.GetSpanOfPreviousSibling(extent.Span);
-            string preText = pre.GetText();
+            TextExtent extent = navigator.GetExtentOfWord(subjectTriggerPoint.Value);            
             string searchText = extent.Span.GetText();
-            string desText;
-            if (preText == "<")//控件
+            if (searchText.Length < 2)//一般都是一个符号
+            {
+                applicableToSpan = null;
+                return;
+            }               
+            SnapshotSpan ssPrevious = navigator.GetSpanOfPreviousSibling(extent.Span);
+            SnapshotSpan ssEnclosing = navigator.GetSpanOfEnclosing(extent.Span);
+            
+            string strPreText = ssPrevious.GetText();
+            string strEnclosing = ssEnclosing.GetText();            
+            string desText,strCtrlName;
+            if (strPreText == "<"|| strPreText == "</" || strEnclosing.StartsWith("</"))//控件名
             {
                 SouiData.GetInstance().GetKeyInf(searchText, out desText, currentSnapshot, out applicableToSpan, querySpan);
                 if (desText != null)
@@ -45,18 +53,54 @@ namespace SXml
                 else
                 {
                     applicableToSpan = null;
-                    quickInfoContent.Add("");
                 }
                 return;
             }
-            string TempText=preText;
-            while (pre.Start >= 0)
+            else if (strPreText =="=\"")//属性值
             {
-                if (preText == ">")
-                    break;
-                if(preText == "<")
+                applicableToSpan = null;
+                return;
+            }
+            //属性名
+           
+            else if (strEnclosing.StartsWith("<"))
+            {
+                strCtrlName= navigator.GetExtentOfWord(ssEnclosing.Start+1).Span.GetText();
+
+                if(strCtrlName==null||strCtrlName.Length==0)
                 {
-                    SouiData.GetInstance().GetProInf(TempText,searchText, out desText, currentSnapshot, out applicableToSpan, querySpan);
+                    applicableToSpan = null;
+                    return;
+                }
+                SouiData.GetInstance().GetProInf(strCtrlName, searchText, out desText, currentSnapshot, out applicableToSpan, querySpan);
+                if (desText != null)
+                {
+                    quickInfoContent.Add(desText);
+                    return;
+                }
+            }
+            else if (strPreText.StartsWith("<"))
+            {
+                strCtrlName = navigator.GetExtentOfWord(ssPrevious.Start + 1).Span.GetText();
+
+                if (strCtrlName == null || strCtrlName.Length == 0)
+                {
+                    applicableToSpan = null;
+                    return;
+                }
+                SouiData.GetInstance().GetProInf(strCtrlName, searchText, out desText, currentSnapshot, out applicableToSpan, querySpan);
+                if (desText != null)
+                {
+                    quickInfoContent.Add(desText);
+                    return;
+                }
+            }
+            strCtrlName =strPreText;
+            while (ssPrevious.Start > 0)
+            {
+                if(strPreText == "<")
+                {
+                    SouiData.GetInstance().GetProInf(strCtrlName, searchText, out desText, currentSnapshot, out applicableToSpan, querySpan);
                     if (desText != null)
                     {
                         quickInfoContent.Add(desText);
@@ -64,15 +108,11 @@ namespace SXml
                     }
                     break;
                 }
-                TempText = preText;
-                SnapshotPoint oldpos = pre.Start;
-                pre = navigator.GetSpanOfPreviousSibling(pre);
-                if (pre.Start == oldpos)
-                    break;
-                preText = pre.GetText();
+                strCtrlName = strPreText;
+                ssPrevious = navigator.GetExtentOfWord(ssPrevious.Start-1).Span;
+                strPreText = ssPrevious.GetText();
             }
             applicableToSpan = null;
-            quickInfoContent.Add("");
         }
         private bool m_isDisposed;
         public void Dispose()

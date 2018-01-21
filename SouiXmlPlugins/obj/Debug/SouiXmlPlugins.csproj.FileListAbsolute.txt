@@ -1,7 +1,0 @@
-e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\bin\Debug\SouiXmlPlugins.vsix
-e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\bin\Debug\extension.vsixmanifest
-e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Debug\SouiXmlPlugins.csprojResolveAssemblyReference.cache
-e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Debug\SouiXmlPlugins.dll
-e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Debug\SouiXmlPlugins.pdb
-e:\doc\visual studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Debug\extension.vsixmanifest
-E:\doc\Visual Studio 2017\Projects\SouiXmlPlugins\SouiXmlPlugins\obj\Debug\SouiXmlPlugins.csproj.CoreCompileInputs.cache
