@@ -19,6 +19,8 @@ namespace SXml
     {
         string m_des;
         Dictionary<string, string> m_promap=new Dictionary<string, string>();
+        List<string> m_parent=new List<string>();
+        int m_iCur = 0;
         public string getdes()
         {
             return m_des;
@@ -27,9 +29,20 @@ namespace SXml
         {
             m_promap.Add(desname, des);
         }
-        public CtrlInf(string des)
+        public void addparent(string parentName)
+        {
+            if (m_parent.Contains(parentName))
+                return;
+            m_parent.Add(parentName);
+        }
+        public CtrlInf(string des, string v)
         {
             m_des = des;
+            var parentlist = v.Split(',');
+            foreach(var parentName in parentlist)
+            {
+                addparent(parentName);
+            }
         }
         public CtrlInf()
         { }
@@ -37,6 +50,11 @@ namespace SXml
         {
             return m_promap;
         }
+        public List<string> GetParent()
+        {
+            return m_parent;
+        }
+        
     }
     class SouiData
     {
@@ -153,6 +171,19 @@ namespace SXml
                         {                           
                             list.Add(new Completion(pair.Key, pair.Key, pair.Value, ico, "s"));
                         }
+                        //添加父窗口的属性
+                        var parentlist = m_controlMap[key].GetParent();
+                        foreach (string parent in parentlist)
+                        {
+                            if (m_controlMap.ContainsKey(parent))
+                            {
+                                prolist = m_controlMap[key].getprolist();
+                                foreach (KeyValuePair<string, string> pair in prolist)
+                                {
+                                    list.Add(new Completion(pair.Key, pair.Key, pair.Value, ico, "s"));
+                                }
+                            }
+                        }
                     }
                     break;
             }
@@ -168,7 +199,7 @@ namespace SXml
                 XmlNodeList nodeList = xmlDoc.SelectSingleNode("/root/ctrls").ChildNodes;
                 foreach (XmlNode xn in nodeList)
                 {                   
-                    m_controlMap.Add(xn.Name, new CtrlInf(((XmlElement)xn).GetAttribute("des")));
+                    m_controlMap.Add(xn.Name, new CtrlInf(((XmlElement)xn).GetAttribute("des"), ((XmlElement)xn).GetAttribute("parent")));
                 }
             }
             catch (Exception)

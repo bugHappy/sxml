@@ -37,13 +37,12 @@ namespace SXml
             if (!currentPoint.HasValue)
                 return;
             ITextSnapshotLine TextSnapshotLine = session.TextView.TextSnapshot.GetLineFromPosition(currentPoint.Value);
-            //ITextStructureNavigator navigator = m_sourceProvider.NavigatorService.GetTextStructureNavigator(m_textBuffer);
-            //string lineText = TextSnapshotLine.GetText();
-            //SnapshotPoint linestart = TextSnapshotLine.Start;
-            //lineText = lineText.Substring(0, currentPoint.Value - linestart.Position);
+            ITextStructureNavigator navigator = m_sourceProvider.NavigatorService.GetTextStructureNavigator(m_textBuffer);
+            string xmlText = TextSnapshotLine.GetText();
+            SnapshotPoint linestart = TextSnapshotLine.Start;
+            xmlText = xmlText.Substring(0, currentPoint.Value - linestart.Position);
             //向前查找 <或>或者空格
-           
-            string xmlText= m_textBuffer.CurrentSnapshot.ToString();
+            //string xmlText= m_textBuffer.CurrentSnapshot.GetText();
             int pos1 = xmlText.LastIndexOf("<");
             int pos2 = xmlText.LastIndexOf(" ");
             int pos3 = xmlText.LastIndexOf(">");

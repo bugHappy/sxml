@@ -6,7 +6,7 @@
 		<window des="SOUI的逻辑窗口，控件他妈" />
 		<animateimg des="动画" />
 		<anmimg des="动画" />
-		<button des="按钮" />
+		<button des="按钮" parent="window"/>
 		<buttonex des="扩展按钮" />
 		<calendar des="日历" />
 		<caption des="标题" />
