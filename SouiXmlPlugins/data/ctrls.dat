@@ -2,54 +2,56 @@
 <root>
 	<ctrls>
     <SOUI des="SOUI真窗口"/>
-    <root des="SOUI逻辑根窗口"/>
+    <root des="SOUI逻辑根窗口" parent="window"/>
 		<window des="SOUI的逻辑窗口，控件他妈" />
-		<animateimg des="动画" />
-		<anmimg des="动画" />
+		<animateimg des="动画" parent="window"/>
+		<anmimg des="动画" parent="window"/>
 		<button des="按钮" parent="window"/>
-		<buttonex des="扩展按钮" />
-		<calendar des="日历" />
-		<caption des="标题" />
-		<check des="复选框" />
-		<combobox des="组合框" />
-		<comboview des="组合框" />
-		<div des="支持滚动条的panel" />
-		<edit des="编辑框" />
-		<flash des="flash插入控件" />
+		<buttonex des="扩展按钮" parent="window"/>
+		<calendar des="日历"  parent="window"/>
+		<caption des="标题"  parent="window"/>
+		<check des="复选框" parent="window"/>
+    <combobase des="组合框基础控件" parent="window"/>
+		<combobox des="组合框"  parent="combobase"/>
+		<comboview des="组合框"  parent="combobase"/>
+		<div des="支持滚动条的panel" parent="window"/>
+		<edit des="编辑框" parent="richedit"/>
+    <activex des="activex容器" parent="window"/>
+		<flash des="flash插入控件" parent="activex"/>
 		<gif des="动画" />
-		<group des="组合框" />
+		<group des="组合框" parent="window"/>
 		<hotkey des="热键" />
-		<hr des="垂直线" />
-		<icon des="图标控件" />
-		<img des="图片控件" />
-		<imgbtn des="图片按钮" />
+		<hr des="线条控件" parent="window"/>
+		<icon des="图标控件" parent="window" />
+		<img des="图片控件" parent="window"/>
+		<imgbtn des="图片按钮" parent="button"/>
 		<include des="包含一个布局定义文件" />
-		<link des="URL链接控件" />
+		<link des="超链接控件" parent="window"/>
 		<listbox des="列表控件" />
-		<listctrl des="列表控件" />
-		<listview des="数据驱动的列表控件" />
-		<mclistview des="带表头的数据驱动的列表控件" />
-		<mediaplayer des="mediaplayer" />
-		<progress des="进度条" />
-		<richedit des="富文本控件" />
-		<radio des="单选控件" />
+		<listctrl des="列表控件" parent="scrollview"/>
+		<listview des="数据驱动的列表控件" parent="div"/>
+		<mclistview des="带表头的数据驱动的列表控件" parent="div"/>
+		<mediaplayer des="mediaplayer" parent="window"/>
+		<progress des="进度条" parent="window"/>
+		<richedit des="富文本控件" parent="div"/>
+		<radio des="单选控件" parent="window"/>
 		<realwnd des="真窗口" />
 		<RotateWindow des="" />
 		<scrollbar des="滚动条" />
 		<scrolltext des="滚动文本" />
-		<scrollview des="滚动视图控件" />
-		<sliderbar des="划动控件" />
+		<scrollview des="滚动视图控件" parent="div"/>
+		<sliderbar des="划动控件" parent="progress"/>
 		<spinButton des="微调按钮" />
 		<splitcol des="列分割条" />
 		<splitrow des="行分割条" />
-		<tabctrl des="tab控件" />
+		<tabctrl des="tab控件" parent="window"/>
 		<tabctrl2 des="增强的tab" />
-		<text des="文本控件" />
-		<tileview des="平铺风格的列表控件" />
-		<toggle des="开关控件" />
+		<text des="文本控件" parent="window"/>
+		<tileview des="平铺风格的列表控件" parent="div"/>
+		<toggle des="开关控件" parent="window"/>
 		<toolbox des="工具箱" />
-		<treectrl des="树控件" />
-		<treeview des="数据驱动的树控件" />
-    <iectrl des="ie控件"/>
+		<treectrl des="树控件" parent="scrollview"/>
+		<treeview des="数据驱动的树控件" parent="div"/>
+    <iectrl des="ie控件" parent="window"/>
 	</ctrls>
 </root>
