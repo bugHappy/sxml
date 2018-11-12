@@ -496,8 +496,24 @@
       <layout_gravity des="使用线性布局时的子控件对齐方式&#10;right/left/center/top/bottom&#10;无&#10;right&#10;" />
       <weight des="控件在父控件中的尺寸权重&#10;数值&#10;无&#10;1&#10;" />
       <extend_left des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
-      <extend_top des="" />
-      <extend des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
+      <extend_top des="线性布局时控件距上边控件的距离" />
+      <extend_right des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
+      <extend_bottom des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
+      <gravity des="线性布局时子控件的对齐方式"/>
+      <rowSpan des="占行数，网格布局有效"/>
+      <columnSpan des="占列数，网格布局有效"/>
+      <layout_xGravity des ="x方向对齐方式，网格布局有效"/>
+      <layout_yGravity des="y方向对齐方式，网格布局有效"/>
+      <columnWeight des ="行权重，网格布局有效"/>
+      <rowWeight des="行权重，网格布局有效"/>
+      <columnCount des="网格布局列数"/>
+      <rowCount des="网格布局行数"/>
+      <xInterval des="水平间距"/>
+      <yInterval des="竖直间距"/>
+      <interval des="水平和竖直间距"/>
+      <xGravity des="水平对齐方式"/>
+      <yGravity des="竖直对齐方式"/>
+      <gravity des="水平/竖直对齐方式"/>
     </window>
   </ctrls_property>
 </root>

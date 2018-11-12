@@ -38,7 +38,7 @@ namespace SXml
             {
                 applicableToSpan = null;
                 return;
-            }               
+            }
             SnapshotSpan ssPrevious = navigator.GetSpanOfPreviousSibling(extent.Span);
             SnapshotSpan ssEnclosing = navigator.GetSpanOfEnclosing(extent.Span);
             

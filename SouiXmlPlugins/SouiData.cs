@@ -200,6 +200,11 @@ namespace SXml
         {
             if (ctrlName == null || ctrlName.Length == 0 || !m_controlMap.ContainsKey(ctrlName))
             {
+                var defprolist = m_controlMap["window"].getprolist();
+                foreach (KeyValuePair<string, string> pair in defprolist)
+                {
+                    list.Add(new Completion(pair.Key, pair.Key, pair.Value, ico, "s"));
+                }
                 return;
             }
             //添加属性

@@ -18,9 +18,7 @@ namespace SXml
         internal IGlyphService GlyphService { get; set; }
         public ICompletionSource TryCreateCompletionSource(ITextBuffer textBuffer)
         {
-            //NavigatorService.CreateTextStructureNavigator
             return new SouiCompletionSource(this, textBuffer);
         }
-
     }
 }

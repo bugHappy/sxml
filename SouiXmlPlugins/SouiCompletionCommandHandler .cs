@@ -10,6 +10,8 @@ using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.TextManager.Interop;
 using Microsoft.VisualStudio.Utilities;
+using Microsoft.VisualStudio.Package;
+
 
 namespace SXml
 {
@@ -25,16 +27,19 @@ namespace SXml
         internal ICompletionBroker CompletionBroker { get; set; }
         [Import]
         internal SVsServiceProvider ServiceProvider { get; set; }
-       
+        //[Import]
+        //internal LanguageService LangService { get; set; }
+
         public void VsTextViewCreated(IVsTextView textViewAdapter)
-        {
+        {          
             ITextView textView = AdapterService.GetWpfTextView(textViewAdapter);
             if (textView == null)
                 return;
-            //SouiData.GetInstance().LoadSouiDB();
+            LanguageService LangService=ServiceProvider.GetService(typeof(LanguageService)) as LanguageService;
+            //LanguageService LangService=new LanguageService();
+            //string filepath=LangService.GetSource(textViewAdapter).GetFilePath();
             textView.Properties.GetOrCreateSingletonProperty(delegate () { return new SouiCompletionCommandHandler(textViewAdapter, textView, this); });
         }
-
     }
     internal class SouiCompletionCommandHandler : IOleCommandTarget
     {
