@@ -150,6 +150,11 @@ namespace SXml
                     }
                 }
             }
+            else if(GetProInf("window", ref pro, out inf))
+            {
+                applicableToSpan = currentSnapshot.CreateTrackingSpan(querySpan.Start.Add(0).Position, 9, SpanTrackingMode.EdgeInclusive);
+                return;
+            }
             inf = null;
             applicableToSpan = null;
         }
