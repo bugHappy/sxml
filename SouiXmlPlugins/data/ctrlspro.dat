@@ -1,519 +1,470 @@
 <?xml version="1.0"?>
 <root>
-  <ctrls_property>
-    <edit>
-      <cueColor des="无内容显示的提示文字的颜色&#10;string&#10;无&#10;请在这里输入您的姓名" />
-      <cueText des="无内容显示的提示文字&#10;string&#10;无&#10;请在这里输入您的姓名" />
-    </edit>
-    <RotateWindow>
-      <AnimImg des="AnimImg" />
-      <speed des="speed" />
-      <turn des="turn" />
-    </RotateWindow>
-    <splitrow>
-      <sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
-      <sepSkin des="间隔条皮肤&#10;skin&#10;SOUI自带间隔皮肤&#10;my_sep_skin" />
-      <adjustable des="adjustable" />
-    </splitrow>
-    <link>
-      <href des="链接地址&#10;url&#10;无&#10;www.google.cn" />
-    </link>
-    <treectrl>
-      <indent des="缩进大小" />
-      <itemHeight des="项高度" />
-      <itemMargin des="项非客户区" />
-      <checkBox des="是否显示checkBox" />
-      <rightClickSel des="右击上选中行" />
-      <itemBkgndSkin des="项背景皮肤" />
-      <itemSelSkin des="项选中皮肤" />
-      <toggleSkin des="开关皮肤" />
-      <iconSkin des="图标皮肤" />
-      <checkSkin des="checkBox皮肤" />
-      <colorItemBkgnd des="项背景色" />
-      <colorItemSelBkgnd des="项选中时颜色" />
-      <colorItemText des="项文字颜色" />
-      <colorItemSelText des="选中时项的文字颜色" />
-    </treectrl>
-    <gifplayer>
-    </gifplayer>
-    <iectrl>
-      <disable3DBorder des="禁用IE 3D边框&#10;0或1&#10;0&#10;1&#10;" />
-      <url des="要打开的IE地址&#10;合法的URL&#10;无&#10;www.baidu.com&#10;" />
-      <disableScrollbar des="禁用IE滚动条&#10;0或1&#10;0&#10;1&#10;" />
-      <disableContextMenu des="禁用IE右键菜单&#10;0或1&#10;0&#10;1&#10;" />
-      <disableTextSelect des="禁止选中文本&#10;0或1&#10;0&#10;1&#10;" />
-    </iectrl>
-    <anmimg>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <cursor des="鼠标移到上面时显示的鼠标样式&#10;下列值中的一个：arrow/ibeam/wait/cross/ uparrow/ size/ sizenwse/ sizenesw/ sizewe/ sizens/ sizeall/ no/ hand/ help&#10;arrow&#10;hand" />
-      <interval des="动画间隔时间&#10;int&#10;无&#10;10" />
-      <autorun des="自动播放动画&#10;0或1&#10;1&#10;0" />
-      <ani_in des="进场动画&#10;0或1&#10;1&#10;0" />
-      <ani_out des="出场动画&#10;0或1&#10;1&#10;0" />
-    </anmimg>
-    <realwnd>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <colorBkgnd des="控件的背景色。&#10;stirng&#10;无&#10;rgb(100,100,100)" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <wndclass des="真窗口的类名&#10;string&#10;无&#10;static&#10;此类名会传入IRealWndHandler&#13;&#10;HWND CSouiRealWndHandler::OnRealWndCreate( SRealWnd *pRealWnd )&#13;&#10;    {&#13;&#10;        const SRealWndParam &amp;param=pRealWnd-&gt;GetRealWndParam();&#13;&#10;        if(param.m_strClassName==_T(&quot;button&quot;))&#13;&#10;        {//只实现了button的创建&#13;&#10;            //分配一个MFC CButton对象&#13;&#10;            CButton *pbtn=new CButton;&#13;&#10;            //创建CButton窗口,注意使用pRealWnd-&gt;GetContainer()-&gt;GetHostHwnd()作为CButton的父窗口&#13;&#10;            //把pRealWnd-&gt;GetID()作为真窗口的ID&#13;&#10;            pbtn-&gt;Create(param.m_strWindowName,WS_CHILD|WS_VISIBLE|BS_PUSHBUTTON,::CRect(0,0,0,0),CWnd::FromHandle(pRealWnd-&gt;GetContainer()-&gt;GetHostHwnd()),pRealWnd-&gt;GetID());&#13;&#10;            //把pbtn的指针放到SRealWnd的Data中保存，以便在窗口destroy时释放pbtn对象。&#13;&#10;            pRealWnd-&gt;SetData(pbtn);&#13;&#10;            //返回成功创建后的窗口句柄&#13;&#10;            return pbtn-&gt;m_hWnd;&#13;&#10;        }else&#13;&#10;        {&#13;&#10;            return 0;&#13;&#10;        }&#13;&#10;    }&#13;&#10;&#13;&#10;" />
-      <wndname des="wndname" />
-    </realwnd>
-    <SOUI>
-      <trCtx des="窗口使用的翻译上下文&#10;string&#10;无&#10;zh_cn" />
-      <title des="窗口在任务栏显示的标题&#10;string&#10;无&#10;我的窗口" />
-      <width des="窗口宽度&#10;int&#10;无&#10;500" />
-      <height des="窗口高度&#10;int&#10;无&#10;500" />
-      <maxInset des="窗口最大化时显示在屏外的大小&#10;rect&#10;&quot;0,0,0,0&quot;&#10;5,5,5,5&#10;WS_OVERLAPPED风格窗口此属性无效&#13;&#10;" />
-      <margin des="四周非客户区大小&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
-      <minsize des="窗口最小尺寸&#10;size&#10;&quot;200，200&quot;&#10;800,600" />
-      <wndStyle des="窗口风格&#10;DWORD&#10;无&#10;5,30,5,5" />
-      <wndStyleEx des="窗口扩展风格&#10;DWORD&#10;无&#10;5,30,5,5" />
-      <resizable des="窗口大小是否可变&#10;0或1&#10;1&#10;0" />
-      <translucent des="窗口半透明属性&#10;0或1&#10;1&#10;0" />
-      <sendWheel2Hover des="是否向当前鼠标位置发送鼠标滚轮消息&#10;0或1&#10;0&#10;1" />
-      <appWnd des="appWindow窗口样式(已经由Style取代)&#10;0或1&#10;0&#10;1" />
-      <toolWindow des="设置WS_ES_TOOLWINDOW属性(已经由Style取代)&#10;0或1&#10;无&#10;1" />
-      <smallIcon des="小图标&#10;HICO&#10;无&#10;ICOX:16" />
-      <bigIcon des="大图标&#10;HICO&#10;无&#10;ICOX:32" />
-      <alpha des="透明度&#10;0到255&#10;255&#10;100&#10;" />
-      <allowSpy des="是否允许spy消息（就是souispy上可以发现SOUI控件的原理）&#10;0或1&#10;0&#10;1" />
-      <appMainWnd des="窗口风格（0，1，2分别对应wndType）&#10;0或1或2&#10;8&#10;0" />
-      <wndType des="窗口风格&#10;undefine/appMain/normal&#10;appMain&#10;normal" />
-      <Style des="窗口风格（app,tool,popup）" />
-    </SOUI>
-    <img>
-      <iconIndex des="img显示的子图索引&#10;int&#10;无&#10;0&#10;" />
-      <tile des="绘制是否平铺（0-拉伸；1-常规绘制；2-平铺）" />
-    </img>
-    <treeview>
-      <indent des="间隔大小" />
-      <wantTab des="是否接收TAB键&#10;0或1&#10;0&#10;1" />
-    </treeview>
-    <include />
-    <flash>      
-      <url des="播放地址&#10;一个合法URL&#10;无&#10;http:\\www.abc.com\flash.swf" />
-    </flash>
-    <icon>
-      <src des="图标资源&#10;资源字符串&#10;无&#10;lagIco:256&#10;可在后面使用 ico:xxx 来指定使用的图标大小&#13;&#10;" />
-    </icon>
-    <toggle>
-      <toggled des="是否是打开状态&#10;0或1&#10;无&#10;1" />
-    </toggle>
-    <div>
-      <sbSkin des="控件的滚动条皮肤&#10;SKIN&#10;SOUI自带滚动条皮肤&#10;my_sb_skin" />
-      <sbArrowSize des="滚动条箭头大小&#10;size&#10;皮肤提供的箭头大小&#10;10,10" />
-      <sbWid des="控件的滚动条宽度&#10;int&#10;滚动条皮肤提供的尺寸&#10;20" />
-      <sbEnable des="滚动条是否可用&#10;0或1或2或3&#10;0&#10;对应关系如下&#10;SSB_NULL    0 （不显示滚动条）&#10;SSB_HORZ    1 （显示横向滚动条）&#10;SSB_VERT    2 （显示纵向滚动条）&#10;SSB_BOTH    (SSB_HORZ|SSB_VERT) （显示滚动条）&#10;" />
-      <updateInterval des="滚动时窗口刷新间隔&#10;int&#10;40&#10;20&#10;加长它刷新频率会降低，CPU占用应该会少点，但是效果相应也会变差，比如你感觉它没有动" />
-      <scrollSpeed des="滚动速度&#10;int&#10;无&#10;20" />
-      <sbLeft des="滚动条离左边的距离&#10;int&#10;0&#10;10" />
-      <sbRight des="滚动条离右边的距离&#10;int&#10;0&#10;10" />
-      <sbTop des="滚动条离上边的距离&#10;int&#10;0&#10;10" />
-      <sbBottom des="滚动条离下边的距离&#10;int&#10;0&#10;10" />
-    </div>
-    <activex>
-      <clsID des="IID"/>
-    <clscText des="ClsCtx"/>
-    <delay des="延迟初始化"/>
-    </activex>
-    <tabctrl>
-      <curSel des="当前选中项&#10;int&#10;无&#10;2" />
-      <tabSize des="tabSize" />
-      <tabWidth des="tabWidth" />
-      <tabHeight des="tab头的高度&#10;int&#10;无&#10;30&#10;" />
-      <tabPos des="tabPos" />
-      <tabInterSize des="tab标签之间的间隔&#10;int&#10;无&#10;30&#10;" />
-      <tabInterSkin des="tab标签间隔皮肤&#10;int&#10;无&#10;my_skin&#10;" />
-      <tabSkin des="tabSkin" />
-      <iconSkin des="tab标签图标皮肤&#10;int&#10;无&#10;my_skin&#10;" />
-      <frameSkin des="frameSkin" />
-      <icon-x des="图标X偏移" />
-      <icon-y des="图标Y偏移" />
-      <text-x des="文字X偏移" />
-      <text-y des="文字Y偏移" />
-      <tabAlign des="tab头位置（top,left,right,bottom）" />
-      <textDir des="文字方向（hori,vert）" />
-      <animateSteps des="标签切换时动画步数&#10;int&#10;无&#10;10&#10;" />
-      <animateType des="标签切换时动画样式&#10;int&#10;0&#10;1&#10;当样式为0时背景和前景一起动，当为样式1时背景固定，只有前景动" />
-      <interpolator des="动画使用的插值算法"/>
-    </tabctrl>
-    <mediaplayer>      
-      <url des="地址(url)" />
-    </mediaplayer>
-    <scrollview>
-      <origin-x des="origin-x" />
-      <origin-y des="origin-y" />
-      <viewSize des="视图大小" />
-    </scrollview>
-    <hotkey>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <colorBkgnd des="控件的背景色。&#10;stirng&#10;无&#10;rgb(100,100,100)" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <invalidComb des="invalidComb" />
-      <defCombKey des="defCombKey" />
-      <combKey des="combKey" />
-      <hotKey des="hotKey" />
-    </hotkey>
-    <page>      
-      <iconIndex des="iconIndex" />
-      <title des="标题(title)" />
-    </page>   
-    <root>
-    </root>
-    <animateimg>
-      <speed des="速度(speed)" />
-      <autoStart des="自动动画" />
-      <repeat des="重复次数" />
-    </animateimg>
-    <sliderbar>
-      <thumbSkin des="皮肤" />
-      <thumbInRail des="滑块包含在导轨中" />
-    </sliderbar>
-    <tabctrl2>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <colorBkgnd des="控件的背景色。&#10;stirng&#10;无&#10;rgb(100,100,100)" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <curSel des="当前选中项&#10;int&#10;无&#10;2" />
-      <tabSize des="tabSize" />
-      <tabWidth des="tabWidth" />
-      <tabHeight des="tabHeight" />
-      <tabPos des="tabPos" />
-      <tabInterSize des="tabInterSize" />
-      <tabInterSkin des="tabInterSkin" />
-      <tabSkin des="tabSkin" />
-      <iconSkin des="iconSkin" />
-      <frameSkin des="frameSkin" />
-      <icon-x des="icon-x" />
-      <icon-y des="icon-y" />
-      <tabAlign des="tabAlign" />
-      <textDir des="textDir" />
-      <animateSteps des="animateSteps" />
-      <tabHeadBgSkin des="tabHeadBgSkin" />
-    </tabctrl2>
-    <group>
-      <colorLine1 des="外线颜色" />
-      <colorLine2 des="内线颜色" />
-      <round des="圆角大小" />
-      <headerHeight des="头高度" />
-    </group>
-    <scrollbar>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <arrowSize des="arrowSize" />
-      <min des="min" />
-      <max des="max" />
-      <value des="value" />
-      <page des="page" />
-      <vertical des="vertical" />
-    </scrollbar>
-    <tileview>      
-      <marginSize des="非客户区大小&#10;int&#10;0&#10;20" />
-      <wantTab des="是否接收系统键&#10;0或1&#10;0&#10;1" />
-    </tileview>
-    <header>      
-      <itemSkin des="itemSkin" />
-      <sortSkin des="sortSkin" />
-      <fixWidth des="fixWidth" />
-      <itemSwapEnable des="itemSwapEnable" />
-      <sortHeader des="sortHeader" />
-    </header>
-    <toolbox>      
-      <accel des="快捷键(accel)" />
-      <animate des="动画(animate)" />
-      <icon des="图标(icon)" />
-    </toolbox>
-    <splitcol>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <colorBkgnd des="控件的背景色。&#10;stirng&#10;无&#10;rgb(100,100,100)" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
-      <sepSkin des="间隔条皮肤&#10;skin&#10;SOUI自带间隔皮肤&#10;my_sep_skin" />
-      <adjustable des="adjustable" />
-    </splitcol>
-    <radio>
-      <focusSkin des="焦点皮肤&#10;skin&#10;自带皮肤&#10;radio_focus_skin&#10;" />
-      <checked des="控件是否被选中&#10;0或1&#10;0&#10;1&#10;" />
-    </radio>
-    <button>
-      <accel des="快捷键&#10;color&#10;无&#10;enter&#10;" />
-      <animate des="是否显示透明度过度动画&#10;0或1&#10;无&#10;0&#10;" />
-    </button>
-    <caption>      
-    </caption>
-    <calendar>     
-      <titleHeight des="titleHeight" />
-      <footerHeight des="footerHeight" />
-      <colorWeekend des="colorWeekend" />
-      <colorTitleBack des="colorTitleBack" />
-      <colorDay des="colorDay" />
-      <daySkin des="daySkin" />
-      <titleSkin des="titleSkin" />
-      <title-1 des="title-1" />
-      <title-2 des="title-2" />
-      <title-3 des="title-3" />
-      <title-4 des="title-4" />
-      <title-5 des="title-5" />
-      <title-6 des="title-6" />
-      <title-7 des="title-7" />
-    </calendar>
-    <imgbtn>
-    </imgbtn>
-    <listctrl>
-      <headerHeight des="headerHeight" />
-      <itemHeight des="itemHeight" />
-      <checkBox des="checkBox" />
-      <multiSelection des="multiSelection" />
-      <itemSkin des="itemSkin" />
-      <iconSkin des="iconSkin" />
-      <checkSkin des="checkSkin" />
-      <colorItemBkgnd des="定义奇数行的背景颜色&#10;color&#10;RGBA(255,255,255,255)&#10;RGBA(226,226,226,255)&#10;" />
-      <colorItemBkgnd2 des="定义偶数行的背景颜色&#10;color&#10;RGBA(226,226,226,255)&#10;RGBA(226,226,226,255)&#10;" />
-      <colorItemHotBkgnd des="colorItemHotBkgnd" />
-      <colorItemSelBkgnd des="colorItemSelBkgnd" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <colorSelText des="colorSelText" />
-      <icon-x des="icon-x" />
-      <icon-y des="icon-y" />
-      <text-x des="text-x" />
-      <text-y des="text-y" />
-      <hotTrack des="hotTrack" />
-    </listctrl>
-    <check>
-      <focusSkin des="焦点皮肤" />
-      <checked des="是否选中状态" />
-    </check>
-    <text>
-      <multiLines des="是否支持多行显示&#10;0或1&#10;0&#10;1" />
-      <interHeight des="行间距" />
-    </text>
-    <combobase>      
-      <dropDown des="dropDown" />
-      <dropHeight des="dropHeight" />
-      <curSel des="当前选中项&#10;int&#10;无&#10;2" />
-      <btnSkin des="btnSkin" />
-      <animateTime des="animateTime" />
-      <autoFitDropBtn des="自适应按钮大小"/>
-    </combobase>
-    <combobox>
-      <listStyle des="下拉列表样式"/>
-    </combobox>
-     <comboview>
-      <listStyle des="下拉列表样式"/>
-    </comboview>
-    <splitwnd>      
-      <sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
-      <sepSkin des="间隔条皮肤&#10;skin&#10;SOUI自带间隔皮肤&#10;my_sep_skin" />
-      <adjustable des="adjustable" />
-      <vertical des="vertical" />
-    </splitwnd>
-    <pane>      
-      <idealSize des="理想大小(idealSize)" />
-      <minSize des="最小大小(minSize)" />
-      <maxSize des="最小大小(maxSize)" />
-      <priority des="优先级(priority)" />
-    </pane>
-    <richedit>      
-      <style des="style" />
-      <maxBuf des="maxBuf" />
-      <transparent des="transparent" />
-      <rich des="rich" />
-      <vertical des="vertical" />
-      <wordWrap des="wordWrap" />
-      <allowBeep des="allowBeep" />
-      <autoWordSel des="autoWordSel" />
-      <vcenter des="vcenter" />
-      <inset des="文字四周缩进大小（同padding）&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <rtf des="rtf" />
-      <align des="文字水平对齐方式&#10;left/center/right中的一个&#10;center&#10;right" />
-      <notifyChange des="notifyChange" />
-      <hscrollBar des="hscrollBar" />
-      <vscrollBar des="vscrollBar" />
-      <autoHscroll des="autoHscroll" />
-      <autoVscroll des="autoVscroll" />
-      <multiLines des="是否支持多行显示&#10;0或1&#10;0&#10;1" />
-      <readOnly des="readOnly" />
-      <wantReturn des="wantReturn" />
-      <password des="password" />
-      <number des="number" />
-      <passwordChar des="passwordChar" />
-      <enableDragdrop des="enableDragdrop" />
-      <autoSel des="autoSel" />
-    </richedit>
-    <scrolltext>      
-      <speed des="速度(speed)" />
-      <rolltype des="首位衔接(rolltype)" />
-    </scrolltext>
-    <mclistview>      
-      <headerHeight des="表头高度" />
-      <dividerSkin des="间隔条皮肤" />
-      <dividerSize des="选项之间的间隔大小&#10;int&#10;无&#10;2" />
-      <wantTab des="是否接收系统键&#10;0或1&#10;0&#10;1&#10;" />
-    </mclistview>
-    <listview>
-      <dividerSkin des="间隔条皮肤" />
-      <dividerSize des="选项之间的间隔大小&#10;int&#10;无&#10;2" />
-      <wantTab des="是否接收TAB键&#10;0或1&#10;0&#10;1" />
-    </listview>    
-    <hr>
-      <colorLine des="线条色彩&#10;color&#10;无&#10;rgb(100,100,100)&#10;" />
-      <mode des="mode(vertical,horizontal,tilt)" />
-      <size des="线宽"/>
-      <lineStyle des="线条样式(solid,dash,dot,dashdot,dashdotdot)&#10;&#10;无&#10;&#10;" />
-    </hr>
-    <progress>
-      <bkgndSkin des="背景皮肤" />
-      <posSkin des="进度皮肤" />
-      <min des="最小值" />
-      <max des="最大值" />
-      <value des="当前值" />
-      <vertical des="是否是水平显示" />
-      <up des="竖向显示用于从下向上显示"/>
-      <showPercent des="是否在进度条上显示进度百分比" />
-    </progress>
-    <listbox>      
-      <itemHeight des="行高(itemHeight)" />
-      <itemSkin des="itemSkin" />
-      <iconSkin des="iconSkin" />
-      <colorItemBkgnd des="colorItemBkgnd" />
-      <colorItemBkgnd2 des="colorItemBkgnd2" />
-      <colorItemSelBkgnd des="colorItemSelBkgnd" />
-      <colorItemHotBkgnd des="colorItemHotBkgnd" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <colorSelText des="colorSelText" />
-      <icon-x des="icon-x" />
-      <icon-y des="icon-y" />
-      <text-x des="text-x" />
-      <text-y des="text-y" />
-      <hotTrack des="hotTrack" />
-    </listbox>
-    <buttonex>
-      <accel des="快捷键(accel)" />
-      <animate des="动画(animate)" />
-      <pushOffset des="pushOffset" />
-      <icon des="图标(icon)" />
-      <iconIndex des="图标索引(iconIndex)" />
-      <drawMode des="drawMode" />
-      <sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
-      <iconPos des="iconPos" />
-      <textPos des="textPos" />
-    </buttonex>
-    <window>
-      <id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
-      <name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
-      <skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
-      <ncskin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_ncSkin" />
-      <pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
-      <size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
-      <offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
-      <class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
-      <data des="控件的用户数据&#10;ULONG&#10;无&#10;9527&#10;相应API:&#10; ULONG_PTR GetUserData();&#10; ULONG_PTR SetUserData(ULONG_PTR uData);&#10;" />
-      <enable des="定义一个控件是否可用&#10;0或1&#10;1&#10;0" />
-      <visible des="定义一个控件是否显示(功能同show)&#10;0或1&#10;1&#10;0" />
-      <show des="定义一个控件是否显示（功能同visible）&#10;0或1&#10;1&#10;0" />
-      <display des="窗口隐藏时是否占位，不占位时启动重新布局&#10;0或1&#10;1&#10;0" />
-      <cache des="控件是否使用绘制缓存（在内存建立一个RT缓存以加快渲染速度，一般用于图片拉伸并且会频繁刷新情况）&#10;0或1&#10;0&#10;1" />
-      <alpha des="控件的透明度&#10;0-255的整数&#10;255或皮肤的透明度&#10;100" />
-      <tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
-      <layeredWindow des="当窗口有半透明属性并且透明度需要应用于子窗口时，子窗口的图像渲染到this的缓存RT上。&#10;0或1&#10;1&#10;0" />
-      <trackMouseEvent des="跟踪鼠标的移入移出消息&#10;0或1&#10;0&#10;1" />
-      <msgTransparent des="鼠标消息穿透，决定控件能否收到鼠标消息&#10;0或1&#10;1&#10;0&#10;原本接收鼠标消息的控件可通过它不处理鼠标事件，&#10;也可以通过经让原本不处理鼠标事件的处理鼠标事件。&#10;" />
-      <maxWidth des="自动计算大小时，窗口的最大宽度&#10;int&#10;-1&#10;100" />
-      <clipClient des="窗口绘制时做clip客户区处理的标志&#10;0或1&#10;0&#10;1&#10;由于clip可能增加计算量，只在绘制可能走出客户区时才设置" />
-      <focusable des="控件是否能得到焦点（注意和drawFocusRect不是一个意思）&#10;0或1&#10;1&#10;0" />
-      <drawFocusRect des="控件有焦点时是否绘制焦点框&#10;0或1&#10;1&#10;0" />
-      <float des="控件是否是固定大小&#10;0或1&#10;0&#10;1" />
-      <textMode des="文字对齐方式（其值需要自己计算，所以一般不使用它，而使用align/valign）&#10;UINT&#10;0&#10;1" />
-      <align des="文字水平对齐方式&#10;left/center/right中的一个&#10;center&#10;right" />
-      <valign des="文字垂直对齐方式&#10;top/middle/bottom中的一个&#10;middle&#10;top" />
-      <colorBkgnd des="控件的背景色。&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;无&#10;rgb(100,100,100)" />
-      <colorBorder des="控件的边框背景色。&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;无&#10;rgb(100,100,100)" />
-      <font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
-      <fontHover des="鼠标移入时文字的字体&#10;font&#10;黑色或设置的colorText&#10;adding:-1,face:宋体" />
-      <fontPush des="定义鼠标在控件按下时的字体。&#10;stirng 定义的控件字体信息&#10;全局默认字体&#10;adding:0;face:微软雅黑&quot;" />
-      <fontDisable des="定义控件禁用时的字体。&#10;stirng 定义的控件字体信息&#10;全局默认字体&#10;adding:0;face:微软雅黑&quot;" />
-      <colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
-      <colorTextHover des="鼠标移入时文字的颜色&#10;color（形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color&quot;）&#10;黑色或设置的colorText&#10;rgb(100,100,100" />
-      <colorTextPush des="鼠标按下时的字体颜色&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;黑色&#10;rgb(0,0,0)" />
-      <colorTextDisable des="禁止控件时的字体颜色&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;黑色&#10;rgb(0,0,0)" />
-      <margin-x des="水平方向非客户区大小（左和右都相等）&#10;int&#10;0&#10;10" />
-      <margin-y des="垂直方向非客户区大小（上和下都相等）&#10;int&#10;0&#10;10" />
-      <margin des="四周非客户区大小&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
-      <inset des="文字四周缩进大小（同padding）&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
-      <padding des="文字四周缩进大小（同inset）&#10;rect&#10;0,0,0,0&#10;2,2,2,2" />
-      <cursor des="鼠标移到上面时显示的鼠标样式&#10;下列值中的一个：arrow/ibeam/wait/cross/ uparrow/ size/ sizenwse/ sizenesw/ sizewe/ sizens/ sizeall/ no/ hand/ help&#10;arrow&#10;hand" />
-      <dotted des="当窗口大小不足以显示文本内容时是否显示省略号&#10;0或1&#10;1&#10;0" />
-      <bkgndBlend des="渲染窗口内容和背景混合标志&#10;0或1&#10;1&#10;0" />
-      <sepSpace des="子窗口水平间隔&#10;int&#10;5&#10;10" />
-      <text des="窗口显示的文本&#10;string&#10;无&#10;hello soui" />
-      <layout des="线性布局支持&#10;linearLayout/vbox/hbox/SouiLayout&#10;SouiLayout（就是SOUI原来使用的布局方式）&#10;vbox" />
-      <layout_gravity des="使用线性布局时的子控件对齐方式&#10;right/left/center/top/bottom&#10;无&#10;right&#10;" />
-      <weight des="控件在父控件中的尺寸权重&#10;数值&#10;无&#10;1&#10;" />
-      <extend_left des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
-      <extend_top des="线性布局时控件距上边控件的距离" />
-      <extend_right des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
-      <extend_bottom des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
-      <gravity des="线性布局时子控件的对齐方式"/>
-      <rowSpan des="占行数，网格布局有效"/>
-      <columnSpan des="占列数，网格布局有效"/>
-      <layout_xGravity des ="x方向对齐方式，网格布局有效"/>
-      <layout_yGravity des="y方向对齐方式，网格布局有效"/>
-      <columnWeight des ="行权重，网格布局有效"/>
-      <rowWeight des="行权重，网格布局有效"/>
-      <columnCount des="网格布局列数"/>
-      <rowCount des="网格布局行数"/>
-      <xInterval des="水平间距"/>
-      <yInterval des="竖直间距"/>
-      <interval des="水平和竖直间距"/>
-      <xGravity des="水平对齐方式"/>
-      <yGravity des="竖直对齐方式"/>
-      <gravity des="水平/竖直对齐方式"/>
-    </window>
-  </ctrls_property>
+	<ctrls_property>
+		<edit>
+			<cueColor des="无内容显示的提示文字的颜色&#10;string&#10;无&#10;请在这里输入您的姓名" />
+			<cueText des="无内容显示的提示文字&#10;string&#10;无&#10;请在这里输入您的姓名" />
+		</edit>
+		<RotateWindow>
+			<AnimImg des="AnimImg" />
+			<speed des="speed" />
+			<turn des="turn" />
+		</RotateWindow>
+		<splitrow>
+			<sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
+			<sepSkin des="间隔条皮肤&#10;skin&#10;SOUI自带间隔皮肤&#10;my_sep_skin" />
+			<adjustable des="adjustable" />
+		</splitrow>
+		<link>
+			<href des="链接地址&#10;url&#10;无&#10;www.google.cn" />
+		</link>
+		<treectrl>
+			<indent des="缩进大小" />
+			<itemHeight des="项高度" />
+			<itemMargin des="项非客户区" />
+			<checkBox des="是否显示checkBox" />
+			<rightClickSel des="右击上选中行" />
+			<itemBkgndSkin des="项背景皮肤" />
+			<itemSelSkin des="项选中皮肤" />
+			<toggleSkin des="开关皮肤" />
+			<iconSkin des="图标皮肤" />
+			<checkSkin des="checkBox皮肤" />
+			<colorItemBkgnd des="项背景色" />
+			<colorItemSelBkgnd des="项选中时颜色" />
+			<colorItemText des="项文字颜色" />
+			<colorItemSelText des="选中时项的文字颜色" />
+		</treectrl>
+		<iectrl>
+			<disable3DBorder des="禁用IE 3D边框&#10;0或1&#10;0&#10;1&#10;" />
+			<url des="要打开的IE地址&#10;合法的URL&#10;无&#10;www.baidu.com&#10;" />
+			<disableScrollbar des="禁用IE滚动条&#10;0或1&#10;0&#10;1&#10;" />
+			<disableContextMenu des="禁用IE右键菜单&#10;0或1&#10;0&#10;1&#10;" />
+			<disableTextSelect des="禁止选中文本&#10;0或1&#10;0&#10;1&#10;" />
+		</iectrl>
+		<anmimg>
+			<id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
+			<name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
+			<skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
+			<pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
+			<size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
+			<offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
+			<class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
+			<tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
+			<cursor des="鼠标移到上面时显示的鼠标样式&#10;下列值中的一个：arrow/ibeam/wait/cross/ uparrow/ size/ sizenwse/ sizenesw/ sizewe/ sizens/ sizeall/ no/ hand/ help&#10;arrow&#10;hand" />
+			<interval des="动画间隔时间&#10;int&#10;无&#10;10" />
+			<autorun des="自动播放动画&#10;0或1&#10;1&#10;0" />
+			<ani_in des="进场动画&#10;0或1&#10;1&#10;0" />
+			<ani_out des="出场动画&#10;0或1&#10;1&#10;0" />
+		</anmimg>
+		<realwnd>
+			<id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
+			<name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
+			<skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
+			<pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
+			<size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
+			<offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
+			<class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
+			<font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
+			<tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
+			<colorBkgnd des="控件的背景色。&#10;stirng&#10;无&#10;rgb(100,100,100)" />
+			<colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
+			<wndclass des="真窗口的类名&#10;string&#10;无&#10;static&#10;此类名会传入IRealWndHandler&#13;&#10;HWND CSouiRealWndHandler::OnRealWndCreate( SRealWnd *pRealWnd )&#13;&#10;    {&#13;&#10;        const SRealWndParam &amp;param=pRealWnd-&gt;GetRealWndParam();&#13;&#10;        if(param.m_strClassName==_T(&quot;button&quot;))&#13;&#10;        {//只实现了button的创建&#13;&#10;            //分配一个MFC CButton对象&#13;&#10;            CButton *pbtn=new CButton;&#13;&#10;            //创建CButton窗口,注意使用pRealWnd-&gt;GetContainer()-&gt;GetHostHwnd()作为CButton的父窗口&#13;&#10;            //把pRealWnd-&gt;GetID()作为真窗口的ID&#13;&#10;            pbtn-&gt;Create(param.m_strWindowName,WS_CHILD|WS_VISIBLE|BS_PUSHBUTTON,::CRect(0,0,0,0),CWnd::FromHandle(pRealWnd-&gt;GetContainer()-&gt;GetHostHwnd()),pRealWnd-&gt;GetID());&#13;&#10;            //把pbtn的指针放到SRealWnd的Data中保存，以便在窗口destroy时释放pbtn对象。&#13;&#10;            pRealWnd-&gt;SetData(pbtn);&#13;&#10;            //返回成功创建后的窗口句柄&#13;&#10;            return pbtn-&gt;m_hWnd;&#13;&#10;        }else&#13;&#10;        {&#13;&#10;            return 0;&#13;&#10;        }&#13;&#10;    }&#13;&#10;&#13;&#10;" />
+			<wndname des="wndname" />
+		</realwnd>
+		<combobase>
+			<dropDown des="dropDown" />
+			<dropHeight des="dropHeight" />
+			<curSel des="当前选中项&#10;int&#10;无&#10;2" />
+			<btnSkin des="btnSkin" />
+			<animateTime des="animateTime" />
+			<autoFitDropBtn des="自适应按钮大小" />
+		</combobase>
+		<SOUI>
+			<trCtx des="窗口使用的翻译上下文&#10;string&#10;无&#10;zh_cn" />
+			<title des="窗口在任务栏显示的标题&#10;string&#10;无&#10;我的窗口" />
+			<width des="窗口宽度&#10;int&#10;无&#10;500" />
+			<height des="窗口高度&#10;int&#10;无&#10;500" />
+			<maxInset des="窗口最大化时显示在屏外的大小&#10;rect&#10;&quot;0,0,0,0&quot;&#10;5,5,5,5&#10;WS_OVERLAPPED风格窗口此属性无效&#13;&#10;" />
+			<margin des="四周非客户区大小&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
+			<minsize des="窗口最小尺寸&#10;size&#10;&quot;200，200&quot;&#10;800,600" />
+			<wndStyle des="窗口风格&#10;DWORD&#10;无&#10;5,30,5,5" />
+			<wndStyleEx des="窗口扩展风格&#10;DWORD&#10;无&#10;5,30,5,5" />
+			<resizable des="窗口大小是否可变&#10;0或1&#10;1&#10;0" />
+			<translucent des="窗口半透明属性&#10;0或1&#10;1&#10;0" />
+			<sendWheel2Hover des="是否向当前鼠标位置发送鼠标滚轮消息&#10;0或1&#10;0&#10;1" />
+			<appWnd des="appWindow窗口样式(已经由Style取代)&#10;0或1&#10;0&#10;1" />
+			<toolWindow des="设置WS_ES_TOOLWINDOW属性(已经由Style取代)&#10;0或1&#10;无&#10;1" />
+			<smallIcon des="小图标&#10;HICO&#10;无&#10;ICOX:16" />
+			<bigIcon des="大图标&#10;HICO&#10;无&#10;ICOX:32" />
+			<alpha des="透明度&#10;0到255&#10;255&#10;100&#10;" />
+			<allowSpy des="是否允许spy消息（就是souispy上可以发现SOUI控件的原理）&#10;0或1&#10;0&#10;1" />
+			<appMainWnd des="窗口风格（0，1，2分别对应wndType）&#10;0或1或2&#10;8&#10;0" />
+			<wndType des="窗口风格&#10;undefine/appMain/normal&#10;appMain&#10;normal" />
+			<Style des="窗口风格（app,tool,popup）" />
+		</SOUI>
+		<img>
+			<iconIndex des="img显示的子图索引&#10;int&#10;无&#10;0&#10;" />
+			<tile des="绘制是否平铺（0-拉伸；1-常规绘制；2-平铺）" />
+			<keepAspect des="保持原图比例绘制&#10;bool&#10;false&#10;0&#10;" />
+		</img>
+		<treeview>
+			<indent des="间隔大小" />
+			<wantTab des="是否接收TAB键&#10;0或1&#10;0&#10;1" />
+		</treeview>
+		<flash>
+			<url des="播放地址&#10;一个合法URL&#10;无&#10;http:\\www.abc.com\flash.swf" />
+		</flash>
+		<icon>
+			<src des="图标资源&#10;资源字符串&#10;无&#10;lagIco:256&#10;可在后面使用 ico:xxx 来指定使用的图标大小&#13;&#10;" />
+		</icon>
+		<toggle>
+			<toggled des="是否是打开状态&#10;0或1&#10;无&#10;1" />
+		</toggle>
+		<div>
+			<sbSkin des="控件的滚动条皮肤&#10;SKIN&#10;SOUI自带滚动条皮肤&#10;my_sb_skin" />
+			<sbArrowSize des="滚动条箭头大小&#10;size&#10;皮肤提供的箭头大小&#10;10,10" />
+			<sbWid des="控件的滚动条宽度&#10;int&#10;滚动条皮肤提供的尺寸&#10;20" />
+			<sbEnable des="滚动条是否可用&#10;0或1或2或3&#10;0&#10;对应关系如下&#10;SSB_NULL    0 （不显示滚动条）&#10;SSB_HORZ    1 （显示横向滚动条）&#10;SSB_VERT    2 （显示纵向滚动条）&#10;SSB_BOTH    (SSB_HORZ|SSB_VERT) （显示滚动条）&#10;" />
+			<updateInterval des="滚动时窗口刷新间隔&#10;int&#10;40&#10;20&#10;加长它刷新频率会降低，CPU占用应该会少点，但是效果相应也会变差，比如你感觉它没有动" />
+			<scrollSpeed des="滚动速度&#10;int&#10;无&#10;20" />
+			<sbLeft des="滚动条离左边的距离&#10;int&#10;0&#10;10" />
+			<sbRight des="滚动条离右边的距离&#10;int&#10;0&#10;10" />
+			<sbTop des="滚动条离上边的距离&#10;int&#10;0&#10;10" />
+			<sbBottom des="滚动条离下边的距离&#10;int&#10;0&#10;10" />
+		</div>
+		<tabctrl>
+			<curSel des="当前选中项&#10;int&#10;无&#10;2" />
+			<tabSize des="tabSize" />
+			<tabWidth des="tabWidth" />
+			<tabHeight des="tab头的高度&#10;int&#10;无&#10;30&#10;" />
+			<tabPos des="tabPos" />
+			<tabInterSize des="tab标签之间的间隔&#10;int&#10;无&#10;30&#10;" />
+			<tabInterSkin des="tab标签间隔皮肤&#10;int&#10;无&#10;my_skin&#10;" />
+			<tabSkin des="tabSkin" />
+			<iconSkin des="tab标签图标皮肤&#10;int&#10;无&#10;my_skin&#10;" />
+			<frameSkin des="frameSkin" />
+			<icon-x des="图标X偏移" />
+			<icon-y des="图标Y偏移" />
+			<text-x des="文字X偏移" />
+			<text-y des="文字Y偏移" />
+			<tabAlign des="tab头位置（top,left,right,bottom）" />
+			<textDir des="文字方向（hori,vert）" />
+			<animateSteps des="标签切换时动画步数&#10;int&#10;无&#10;10&#10;" />
+			<animateType des="标签切换时动画样式&#10;int&#10;0&#10;1&#10;当样式为0时背景和前景一起动，当为样式1时背景固定，只有前景动" />
+			<interpolator des="动画使用的插值算法" />
+		</tabctrl>
+		<mediaplayer>
+			<url des="地址(url)" />
+		</mediaplayer>
+		<scrollview>
+			<origin-x des="origin-x" />
+			<origin-y des="origin-y" />
+			<viewSize des="视图大小" />
+		</scrollview>
+		<hotkey>
+			<invalidComb des="invalidComb" />
+			<defCombKey des="defCombKey" />
+			<combKey des="combKey" />
+			<hotKey des="hotKey" />
+		</hotkey>
+		<comboview>
+			<listStyle des="下拉列表样式" />
+		</comboview>
+		<page>
+			<iconIndex des="iconIndex" />
+			<title des="标题(title)" />
+		</page>
+		<animateimg>
+			<speed des="速度(speed)" />
+			<autoStart des="自动动画" />
+			<repeat des="重复次数" />
+		</animateimg>
+		<sliderbar>
+			<thumbSkin des="皮肤" />
+			<thumbInRail des="滑块包含在导轨中" />
+		</sliderbar>
+		<tabctrl2>
+			<curSel des="当前选中项&#10;int&#10;无&#10;2" />
+			<tabSize des="tabSize" />
+			<tabWidth des="tabWidth" />
+			<tabHeight des="tabHeight" />
+			<tabPos des="tabPos" />
+			<tabInterSize des="tabInterSize" />
+			<tabInterSkin des="tabInterSkin" />
+			<tabSkin des="tabSkin" />
+			<iconSkin des="iconSkin" />
+			<frameSkin des="frameSkin" />
+			<icon-x des="icon-x" />
+			<icon-y des="icon-y" />
+			<tabAlign des="tabAlign" />
+			<textDir des="textDir" />
+			<animateSteps des="animateSteps" />
+			<tabHeadBgSkin des="tabHeadBgSkin" />
+		</tabctrl2>
+		<activex>
+			<clsID des="IID" />
+			<clscText des="ClsCtx" />
+			<delay des="延迟初始化" />
+		</activex>
+		<group>
+			<colorLine1 des="外线颜色" />
+			<colorLine2 des="内线颜色" />
+			<round des="圆角大小" />
+			<headerHeight des="头高度" />
+		</group>
+		<scrollbar>
+			<arrowSize des="arrowSize" />
+			<min des="min" />
+			<max des="max" />
+			<value des="value" />
+			<page des="page" />
+			<vertical des="vertical" />
+		</scrollbar>
+		<tileview>
+			<marginSize des="非客户区大小&#10;int&#10;0&#10;20" />
+			<wantTab des="是否接收系统键&#10;0或1&#10;0&#10;1" />
+		</tileview>
+		<header>
+			<itemSkin des="itemSkin" />
+			<sortSkin des="sortSkin" />
+			<fixWidth des="fixWidth" />
+			<itemSwapEnable des="itemSwapEnable" />
+			<sortHeader des="sortHeader" />
+		</header>
+		<toolbox>
+			<accel des="快捷键(accel)" />
+			<animate des="动画(animate)" />
+			<icon des="图标(icon)" />
+		</toolbox>
+		<splitcol>
+			<colorBkgnd des="控件的背景色。&#10;stirng&#10;无&#10;rgb(100,100,100)" />
+			<colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
+			<sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
+			<sepSkin des="间隔条皮肤&#10;skin&#10;SOUI自带间隔皮肤&#10;my_sep_skin" />
+			<adjustable des="adjustable" />
+		</splitcol>
+		<radio>
+			<focusSkin des="焦点皮肤&#10;skin&#10;自带皮肤&#10;radio_focus_skin&#10;" />
+			<checked des="控件是否被选中&#10;0或1&#10;0&#10;1&#10;" />
+		</radio>
+		<button>
+			<accel des="快捷键&#10;color&#10;无&#10;enter&#10;" />
+			<animate des="是否显示透明度过度动画&#10;0或1&#10;无&#10;0&#10;" />
+		</button>
+		<listctrl>
+			<headerHeight des="headerHeight" />
+			<itemHeight des="itemHeight" />
+			<checkBox des="checkBox" />
+			<multiSelection des="multiSelection" />
+			<itemSkin des="itemSkin" />
+			<iconSkin des="iconSkin" />
+			<checkSkin des="checkSkin" />
+			<colorItemBkgnd des="定义奇数行的背景颜色&#10;color&#10;RGBA(255,255,255,255)&#10;RGBA(226,226,226,255)&#10;" />
+			<colorItemBkgnd2 des="定义偶数行的背景颜色&#10;color&#10;RGBA(226,226,226,255)&#10;RGBA(226,226,226,255)&#10;" />
+			<colorItemHotBkgnd des="colorItemHotBkgnd" />
+			<colorItemSelBkgnd des="colorItemSelBkgnd" />
+			<colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
+			<colorSelText des="colorSelText" />
+			<icon-x des="icon-x" />
+			<icon-y des="icon-y" />
+			<text-x des="text-x" />
+			<text-y des="text-y" />
+			<hotTrack des="hotTrack" />
+		</listctrl>
+		<calendar>
+			<titleHeight des="titleHeight" />
+			<footerHeight des="footerHeight" />
+			<colorWeekend des="colorWeekend" />
+			<colorTitleBack des="colorTitleBack" />
+			<colorDay des="colorDay" />
+			<daySkin des="daySkin" />
+			<titleSkin des="titleSkin" />
+			<title-1 des="title-1" />
+			<title-2 des="title-2" />
+			<title-3 des="title-3" />
+			<title-4 des="title-4" />
+			<title-5 des="title-5" />
+			<title-6 des="title-6" />
+			<title-7 des="title-7" />
+		</calendar>
+		<text>
+			<multiLines des="是否支持多行显示&#10;0或1&#10;0&#10;1" />
+			<interHeight des="行间距" />
+		</text>
+		<check>
+			<focusSkin des="焦点皮肤" />
+			<checked des="是否选中状态" />
+		</check>
+		<combobox>
+			<listStyle des="下拉列表样式" />
+		</combobox>
+		<splitwnd>
+			<sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
+			<sepSkin des="间隔条皮肤&#10;skin&#10;SOUI自带间隔皮肤&#10;my_sep_skin" />
+			<adjustable des="adjustable" />
+			<vertical des="vertical" />
+		</splitwnd>
+		<pane>
+			<idealSize des="理想大小(idealSize)" />
+			<minSize des="最小大小(minSize)" />
+			<maxSize des="最小大小(maxSize)" />
+			<priority des="优先级(priority)" />
+		</pane>
+		<richedit>
+			<style des="style" />
+			<maxBuf des="maxBuf" />
+			<transparent des="transparent" />
+			<rich des="rich" />
+			<vertical des="vertical" />
+			<wordWrap des="wordWrap" />
+			<allowBeep des="allowBeep" />
+			<autoWordSel des="autoWordSel" />
+			<vcenter des="vcenter" />
+			<inset des="文字四周缩进大小（同padding）&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
+			<colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
+			<rtf des="rtf" />
+			<align des="文字水平对齐方式&#10;left/center/right中的一个&#10;center&#10;right" />
+			<notifyChange des="notifyChange" />
+			<hscrollBar des="hscrollBar" />
+			<vscrollBar des="vscrollBar" />
+			<autoHscroll des="autoHscroll" />
+			<autoVscroll des="autoVscroll" />
+			<multiLines des="是否支持多行显示&#10;0或1&#10;0&#10;1" />
+			<readOnly des="readOnly" />
+			<wantReturn des="wantReturn" />
+			<password des="password" />
+			<number des="number" />
+			<passwordChar des="passwordChar" />
+			<enableDragdrop des="enableDragdrop" />
+			<autoSel des="autoSel" />
+		</richedit>
+		<scrolltext>
+			<speed des="速度(speed)" />
+			<rolltype des="首位衔接(rolltype)" />
+		</scrolltext>
+		<mclistview>
+			<headerHeight des="表头高度" />
+			<dividerSkin des="间隔条皮肤" />
+			<dividerSize des="选项之间的间隔大小&#10;int&#10;无&#10;2" />
+			<wantTab des="是否接收系统键&#10;0或1&#10;0&#10;1&#10;" />
+		</mclistview>
+		<listview>
+			<dividerSkin des="间隔条皮肤" />
+			<dividerSize des="选项之间的间隔大小&#10;int&#10;无&#10;2" />
+			<wantTab des="是否接收TAB键&#10;0或1&#10;0&#10;1" />
+		</listview>
+		<hr>
+			<colorLine des="线条色彩&#10;color&#10;无&#10;rgb(100,100,100)&#10;" />
+			<mode des="mode(vertical,horizontal,tilt)" />
+			<size des="线宽" />
+			<lineStyle des="线条样式(solid,dash,dot,dashdot,dashdotdot)&#10;&#10;无&#10;&#10;" />
+		</hr>
+		<progress>
+			<bkgndSkin des="背景皮肤" />
+			<posSkin des="进度皮肤" />
+			<min des="最小值" />
+			<max des="最大值" />
+			<value des="当前值" />
+			<vertical des="是否是水平显示" />
+			<up des="竖向显示用于从下向上显示" />
+			<showPercent des="是否在进度条上显示进度百分比" />
+		</progress>
+		<listbox>
+			<itemHeight des="行高(itemHeight)" />
+			<itemSkin des="itemSkin" />
+			<iconSkin des="iconSkin" />
+			<colorItemBkgnd des="colorItemBkgnd" />
+			<colorItemBkgnd2 des="colorItemBkgnd2" />
+			<colorItemSelBkgnd des="colorItemSelBkgnd" />
+			<colorItemHotBkgnd des="colorItemHotBkgnd" />
+			<colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
+			<colorSelText des="colorSelText" />
+			<icon-x des="icon-x" />
+			<icon-y des="icon-y" />
+			<text-x des="text-x" />
+			<text-y des="text-y" />
+			<hotTrack des="hotTrack" />
+		</listbox>
+		<buttonex>
+			<accel des="快捷键(accel)" />
+			<animate des="动画(animate)" />
+			<pushOffset des="pushOffset" />
+			<icon des="图标(icon)" />
+			<iconIndex des="图标索引(iconIndex)" />
+			<drawMode des="drawMode" />
+			<sepSize des="间隔条大小&#10;int&#10;无&#10;2" />
+			<iconPos des="iconPos" />
+			<textPos des="textPos" />
+		</buttonex>
+		<window>
+			<id des="定义一个ID来标识控件&#10;int&#10;无&#10;10086&#10;可使用FindChildByID/FindChildByID2来查找此控件。" />
+			<name des="定义一个名字来标识控件，可使用FindChildByName/FindChildByName2来查找此控件。&#10;string&#10;无&#10;my_name" />
+			<skin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_bkSkin" />
+			<ncskin des="定义一个控件的皮肤。&#10;string（皮肤定义SKIN）&#10;无&#10;my_ncSkin" />
+			<pos des="定义一个控件的位置信息。&#10;四点或两点的坐标值（可能为绝对值或相对值，祥见 http://www.cnblogs.com/setoutsoft/p/3925952.html&#10;无&#10;0,0" />
+			<size des="定义一个控件的尺寸信息。&#10;代表宽/高的两位整数&#10;无&#10;100,20" />
+			<offset des="定义一个控件的位置偏移信息。&#10;X/Y 方向相对控件本身长宽的偏移倍数&#10;无&#10;-0.5,1" />
+			<class des="定义一个控件的一组信息。&#10;定义的一组样式&#10;无&#10;my_class" />
+			<data des="控件的用户数据&#10;ULONG&#10;无&#10;9527&#10;相应API:&#10; ULONG_PTR GetUserData();&#10; ULONG_PTR SetUserData(ULONG_PTR uData);&#10;" />
+			<enable des="定义一个控件是否可用&#10;0或1&#10;1&#10;0" />
+			<visible des="定义一个控件是否显示(功能同show)&#10;0或1&#10;1&#10;0" />
+			<show des="定义一个控件是否显示（功能同visible）&#10;0或1&#10;1&#10;0" />
+			<display des="窗口隐藏时是否占位，不占位时启动重新布局&#10;0或1&#10;1&#10;0" />
+			<cache des="控件是否使用绘制缓存（在内存建立一个RT缓存以加快渲染速度，一般用于图片拉伸并且会频繁刷新情况）&#10;0或1&#10;0&#10;1" />
+			<alpha des="控件的透明度&#10;0-255的整数&#10;255或皮肤的透明度&#10;100" />
+			<tip des="鼠标移上时显示的气泡字符串。&#10;stirng&#10;无&#10;我是一个TIP" />
+			<layeredWindow des="当窗口有半透明属性并且透明度需要应用于子窗口时，子窗口的图像渲染到this的缓存RT上。&#10;0或1&#10;1&#10;0" />
+			<trackMouseEvent des="跟踪鼠标的移入移出消息&#10;0或1&#10;0&#10;1" />
+			<msgTransparent des="鼠标消息穿透，决定控件能否收到鼠标消息&#10;0或1&#10;1&#10;0&#10;原本接收鼠标消息的控件可通过它不处理鼠标事件，&#10;也可以通过经让原本不处理鼠标事件的处理鼠标事件。&#10;" />
+			<maxWidth des="自动计算大小时，窗口的最大宽度&#10;int&#10;-1&#10;100" />
+			<clipClient des="窗口绘制时做clip客户区处理的标志&#10;0或1&#10;0&#10;1&#10;由于clip可能增加计算量，只在绘制可能走出客户区时才设置" />
+			<focusable des="控件是否能得到焦点（注意和drawFocusRect不是一个意思）&#10;0或1&#10;1&#10;0" />
+			<drawFocusRect des="控件有焦点时是否绘制焦点框&#10;0或1&#10;1&#10;0" />
+			<float des="控件是否是固定大小&#10;0或1&#10;0&#10;1" />
+			<textMode des="文字对齐方式（其值需要自己计算，所以一般不使用它，而使用align/valign）&#10;UINT&#10;0&#10;1" />
+			<align des="文字水平对齐方式&#10;left/center/right中的一个&#10;center&#10;right" />
+			<valign des="文字垂直对齐方式&#10;top/middle/bottom中的一个&#10;middle&#10;top" />
+			<colorBkgnd des="控件的背景色。&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;无&#10;rgb(100,100,100)" />
+			<colorBorder des="控件的边框背景色。&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;无&#10;rgb(100,100,100)" />
+			<font des="定义一个控件的字体。&#10;stirng 定义的控件字体信息&#10;无&#10;adding:0,face:微软雅黑" />
+			<fontHover des="鼠标移入时文字的字体&#10;font&#10;黑色或设置的colorText&#10;adding:-1,face:宋体" />
+			<fontPush des="定义鼠标在控件按下时的字体。&#10;stirng 定义的控件字体信息&#10;全局默认字体&#10;adding:0;face:微软雅黑&quot;" />
+			<fontDisable des="定义控件禁用时的字体。&#10;stirng 定义的控件字体信息&#10;全局默认字体&#10;adding:0;face:微软雅黑&quot;" />
+			<colorText des="控件文字的颜色&#10;color&#10;黑色&#10;rgb(100,100,100" />
+			<colorTextHover des="鼠标移入时文字的颜色&#10;color（形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color&quot;）&#10;黑色或设置的colorText&#10;rgb(100,100,100" />
+			<colorTextPush des="鼠标按下时的字体颜色&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;黑色&#10;rgb(0,0,0)" />
+			<colorTextDisable des="禁止控件时的字体颜色&#10;形如&quot;#ffffff&quot;或&quot;rgb(r,g,b)&quot;或&quot;rgba(r,g,b,a)或&quot;@color\blue&quot;&#10;黑色&#10;rgb(0,0,0)" />
+			<margin-x des="水平方向非客户区大小（左和右都相等）&#10;int&#10;0&#10;10" />
+			<margin-y des="垂直方向非客户区大小（上和下都相等）&#10;int&#10;0&#10;10" />
+			<margin des="四周非客户区大小&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
+			<inset des="文字四周缩进大小（同padding）&#10;rect&#10;&quot;0,0,0,0&quot;&#10;2,2,2,2" />
+			<padding des="文字四周缩进大小（同inset）&#10;rect&#10;0,0,0,0&#10;2,2,2,2" />
+			<cursor des="鼠标移到上面时显示的鼠标样式&#10;下列值中的一个：arrow/ibeam/wait/cross/ uparrow/ size/ sizenwse/ sizenesw/ sizewe/ sizens/ sizeall/ no/ hand/ help&#10;arrow&#10;hand" />
+			<dotted des="当窗口大小不足以显示文本内容时是否显示省略号&#10;0或1&#10;1&#10;0" />
+			<bkgndBlend des="渲染窗口内容和背景混合标志&#10;0或1&#10;1&#10;0" />
+			<sepSpace des="子窗口水平间隔&#10;int&#10;5&#10;10" />
+			<text des="窗口显示的文本&#10;string&#10;无&#10;hello soui" />
+			<layout des="线性布局支持&#10;linearLayout/vbox 竖向线性/hbox 横向线性/gridLayout 网络布局&#10;SouiLayout（就是SOUI原来使用的布局方式）&#10;vbox&#10;" />
+			<layout_gravity des="使用线性布局时的子控件对齐方式&#10;right/left/center/top/bottom&#10;无&#10;right&#10;" />
+			<weight des="控件在父控件中的尺寸权重&#10;数值&#10;无&#10;1&#10;" />
+			<extend_left des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
+			<extend_top des="线性布局时控件距上边控件的距离" />
+			<extend_right des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
+			<extend_bottom des="线性布局时控件距右边控件的距离&#10;1&#10;0&#10;12&#10;" />
+			<gravity des="线性布局时子控件的对齐方式" />
+			<rowSpan des="占行数，网格布局有效" />
+			<columnSpan des="占列数，网格布局有效" />
+			<layout_xGravity des="x方向对齐方式，网格布局有效" />
+			<layout_yGravity des="y方向对齐方式，网格布局有效" />
+			<columnWeight des="行权重，网格布局有效" />
+			<rowWeight des="行权重，网格布局有效" />
+			<columnCount des="网格布局列数" />
+			<rowCount des="网格布局行数" />
+			<xInterval des="水平间距" />
+			<yInterval des="竖直间距" />
+			<interval des="水平和竖直间距" />
+			<xGravity des="水平对齐方式" />
+			<yGravity des="竖直对齐方式" />
+		</window>
+	</ctrls_property>
 </root>

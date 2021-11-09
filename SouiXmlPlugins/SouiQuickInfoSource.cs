@@ -1,13 +1,11 @@
 ﻿using Microsoft.VisualStudio.Language.Intellisense;
-using System;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Operations;
-using System.ComponentModel.Composition;
-using Microsoft.VisualStudio.Utilities;
+using System;
+using System.Collections.Generic;
 
 namespace SXml
-{  
+{
     internal class SouiQuickInfoSource : IQuickInfoSource
     {
        
@@ -47,6 +45,9 @@ namespace SXml
             string desText,strCtrlName;
             if (strPreText == "<"|| strPreText == "</" || strEnclosing.StartsWith("</"))//控件名
             {
+                int pos=searchText.IndexOf('.');
+                if (pos != -1)
+                    searchText=searchText.Substring(0, pos);
                 SouiData.GetInstance().GetKeyInf(searchText, out desText, currentSnapshot, out applicableToSpan, querySpan);
                 if (desText != null)
                     quickInfoContent.Add(desText);

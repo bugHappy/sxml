@@ -51,39 +51,73 @@ namespace SXml
             if (pos3 > pos1)
                 return;//标签已关闭
             if (pos1 > pos2)
-            {                
-                SouiData.GetInstance().GetMap(m_xmlType,out m_compList, SouiData.MAPTYPE.C, m_sourceProvider.GlyphService);                
+            {
+                SouiData.GetInstance().GetMap(m_xmlType, out m_compList, SouiData.MAPTYPE.C, m_sourceProvider.GlyphService);
                 var set = new CompletionSet(
                     "SOUI",
                     "SOUI",
                     FindTokenSpanAtPosition(session.GetTriggerPoint(m_textBuffer), session),
                     m_compList,
                     null);
-//                 if(completionSets.Count>0)
-//                 {
-//                     completionSets.Clear();
-//                 }
+                //                 if(completionSets.Count>0)
+                //                 {
+                //                     completionSets.Clear();
+                //                 }
                 completionSets.Add(set);
             }
             else if (pos4 > pos2)
-            {                
-                return;//属性值
-            }
-            else
-            {               
+            {
                 string key = "";
                 if (pos1 > pos3)
                 {
                     if (xmlText[pos1 + 1] != '/')//闭合节点
                     {
                         int pos = xmlText.IndexOf(" ", pos1);//<0123 56
-                        pos1++;
+                        ++pos1;
                         key = xmlText.Substring(pos1, pos - pos1);
                     }
-                }               
+                }
+                //控件名
                 if (key.Length != 0)
                 {
-                    SouiData.GetInstance().GetMap(m_xmlType ,out m_compList, SouiData.MAPTYPE.P, m_sourceProvider.GlyphService, key);
+                    //属性名
+                    string pro = "";
+                    xmlText.IndexOf(" ", pos1);//<0123 56
+                    int pos = xmlText.LastIndexOf(" ", pos4);
+                    ++pos;
+                    pro = xmlText.Substring(pos, pos4 - pos);
+                    if (pro.Length != 0)
+                    {
+                        SouiData.GetInstance().GetMap(m_xmlType, out m_compList,m_sourceProvider.GlyphService, key,pro);
+                        var set = new CompletionSet(
+                            "SOUI",
+                            "SOUI",
+                            FindTokenSpanAtPosition(session.GetTriggerPoint(m_textBuffer), session),
+                            m_compList,
+                            null);
+                        if (completionSets.Count > 0)
+                        {
+                            completionSets.Clear();
+                        }
+                        completionSets.Add(set);
+                    }
+                }
+            }
+            else
+            {
+                string key = "";
+                if (pos1 > pos3)
+                {
+                    if (xmlText[pos1 + 1] != '/')//闭合节点
+                    {
+                        int pos = xmlText.IndexOf(" ", pos1);//<0123 56
+                        ++pos1;
+                        key = xmlText.Substring(pos1, pos - pos1);
+                    }
+                }
+                if (key.Length != 0)
+                {
+                    SouiData.GetInstance().GetMap(m_xmlType, out m_compList, SouiData.MAPTYPE.P, m_sourceProvider.GlyphService, key);
                     var set = new CompletionSet(
                         "SOUI",
                         "SOUI",
